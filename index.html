@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Failed Prints</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+</head>
+
+<body>
+
+  <center>
+    <div class="text">
+      <h1>Tesseract Failed 3D Print Counter</h1>
+      <i>Why don't we just Glowforge the whole robot!</i>
+      <h3> Failed prints to date:</h3>
+    </div>
+
+    <div class="number">
+      <span id="field">9</span>
+    </div>
+
+    <div class="button">
+      <form>
+        <input type="button" name="button" value="There goes another one!" id="button" onclick="add();" />
+      </form>
+    </div>
+  </center>
+
+</body>
+  
+<script >    
+var value = 9;
+      
+function add() {
+  value++;
+  document.getElementById("field").innerHTML = value;
+}
+    </script>
+
+</html>
+ 
